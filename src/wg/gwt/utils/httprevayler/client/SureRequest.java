@@ -1,4 +1,4 @@
-package wg.gwt.utils.httprevayler;
+package wg.gwt.utils.httprevayler.client;
 
 
 
@@ -24,7 +24,7 @@ public class SureRequest {
 			new RequestBuilder(_method, requestUrl(params));
 
 		setHeaders(requestBuilder);
-
+		
 		requestBuilder.sendRequest(requestData(params),
 			new SureRequestCallbackConverter(requestCallback));
 		
@@ -46,8 +46,7 @@ public class SureRequest {
 	
 	private void setHeaders(RequestBuilder requestBuilder) {
 		if (_method == RequestBuilder.POST)
-			requestBuilder.setHeader("Content-type",
-			"application/x-www-form-urlencoded; charset=utf-8");
+			requestBuilder.setHeader("Content-type",	"application/x-www-form-urlencoded; charset=utf-8");
 	}
 	
 	private String processParams(Map<String, String> params) {

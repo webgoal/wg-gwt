@@ -1,4 +1,4 @@
-package wg.gwt.utils.httprevayler;
+package wg.gwt.utils.httprevayler.client;
 
 
 import java.util.Map;

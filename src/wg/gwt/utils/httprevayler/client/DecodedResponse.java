@@ -1,4 +1,4 @@
-package wg.gwt.utils.httprevayler;
+package wg.gwt.utils.httprevayler.client;
 
 import com.google.gwt.http.client.Response;
 import com.google.gwt.http.client.URL;
